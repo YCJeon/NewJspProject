@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body{
+            margin: 10px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="color: green;">HTML Forms</h2>
+
+<form action="form_ok.jsp" method="post">
+    이름 : <input type="text" id="name" name="name" ><br>
+    아이디 : <input type="text" id="id" name="id" ><br>
+    비번 : <input type="text" id="password" name="password"><br>
+    성별 : <input type="radio" name="gender"value="여자"> 여자 <input type="radio" name = "gender" value="남자"> 남자<br>
+    생년월일: <input type="date" id="birthday"><br>
+    <label for="cars">현재 대학교 학년:</label>
+    <select name="school-year" id="school-year">
+        <option value="1-year">1학년</option>
+        <option value="saab">2학년</option>
+        <option value="opel">3학년</option>
+        <option value="audi">4학년</option>
+    </select><br>
+    현재 재학여부 : <input type="radio" name="attending"value="재학중"> 재학중 <input type="radio" name="attending"value="휴학중"> 휴학중 <br>
+    좋아하는 색: <input type="color" id="color" name="Color">
+    <fieldset>
+        <legend>가능한 언어</legend>
+        <input type="checkbox" id="language1" name="language" value="Korea">
+        <label for="language1">한국어</label><br>
+
+        <input type="checkbox" id="language2" name="language" value="English">
+        <label for="language2">English</label><br>
+
+    </fieldset>
+    <p><label for="w3review">간단한 자기소개:</label></p>
+    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br>
+
+    <input type="submit" value="Submit">
+</form>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
